@@ -272,6 +272,7 @@ nav .container * {
 .review .card {
   padding: 2rem 1.2rem 1rem;
   box-shadow: 0px 0px 5px #00000029;
+  height: fit-content;
 }
 
 /* FAQ */
