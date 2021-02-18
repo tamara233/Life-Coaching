@@ -1,0 +1,430 @@
+/* Default reset minified */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+li{list-style:none}
+
+
+/* ---- base ---- */
+
+:root{
+    --primary: #A18B80;
+    --secondary: #293C48;
+    --bg-color: #F5F5F5;
+    --p-20: 1.25rem;
+    --p-18: 1.125rem;
+    --shadow: 0 3px 10px 0 rgba(0,0,0,0.1);
+    --border-rad: 3px;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url("./fonts/Montserrat-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PTSerif';
+  src: url("./fonts/PTSerif-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AvenirNext LTPro';
+  src: url("./fonts/AvenirNextLTPro-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Dancing Script';
+  src: url("./fonts/DancingScript-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+html,body{ 
+	width: 100%;   
+}
+
+html{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  overflow-x: hidden;
+  font-size: 75%;
+}
+
+body{
+  font-family: 'Montserrat';
+  display: block;
+  line-height: 1.3;
+  font-weight: 400;
+}
+body , nav {
+  background: #ffffff;
+}
+p, h1, h2, h3, h4, h5, a {
+    margin-bottom: .5rem;
+    line-height: 1.3;
+}
+p {
+  line-height: 1.875rem;
+}
+h1, h2, h3, h4, h5,h6 {
+  font-weight: 700;
+}
+
+h1, h2, h3 {
+  font-family: 'PTSerif';
+}
+h1, h3 {
+  color: var(--primary);
+}
+h2, h3 {
+  text-align: center;
+}
+h3 {
+  margin-bottom: 7rem;
+}
+h1 {
+    font-size: 3.75rem;
+}
+h2 {
+    font-size: 2.875rem;
+}
+h3 {
+    font-size: 1.875rem;
+}
+h4 {
+    font-size: 1.625rem;
+}
+h5 {
+  font-size: var(--p-20);
+}
+p {
+    font-size: var(--p-18);
+    line-height: 1.625rem;
+}
+img {
+  max-width: 100%;
+}
+section {
+  margin-bottom: 9rem;
+}
+section > .row {
+  padding-bottom: 4rem;
+}
+.text-bold {
+  font-weight: 700;
+}
+.p-18 {
+  font-size: var(--p-18);
+}
+.p-20 {
+  font-size: var(--p-20);
+}
+.t-primary {
+  color: var(--primary);
+}
+.btn {
+  height: 3.5rem;
+  background-color: var(--primary);
+  border-radius: 29px;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 0 2.5rem;
+  letter-spacing: 0.8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+}
+.btn-border {
+  background-color: #ffffff!important;
+  border: 2px solid var(--primary);
+  font-weight: 400;
+  color: var(--secondary);
+  height: 2.625rem;
+  padding: 0 1.6rem;
+}
+.grey-bg { 
+  background-color: #F5F5F5;
+  margin-top: -7rem;
+}
+.m-bg {
+  margin: 14rem 0;
+}
+.bg-img {
+  background: url(../img/wavy-grey.svg) no-repeat;
+  background-size: cover;
+  height: 15rem;
+  margin-top: -10rem;
+  margin-left: -21rem;
+  z-index: -1;
+  }
+  .bg-img-bottom {
+    background: url(../img/download.svg) no-repeat;
+    background-size: cover;
+  height: 20rem;
+  margin-top: -10rem;
+  margin-left: -21rem;
+  position: relative;
+    z-index: -1;
+  }
+.lh-20 {
+  line-height: var(--p-20);
+}
+.w-45 {
+  width: 45%;
+}
+/* Navigation */
+nav .container * {
+  margin-bottom: 0;
+  padding-bottom: 0.8rem;
+}
+.navbar-brand {
+  font-family: 'Dancing Script';
+  letter-spacing: 0.5px;
+  color: #D068B5!important;
+  font-size: 3.125rem;
+  line-height: 2.5rem;
+}
+.navbar-brand span {
+  font-family: 'AvenirNext LTPro';
+  letter-spacing: 0.5px;
+  color: var(--secondary)!important;
+  font-size: var(--p-20);
+  text-transform: uppercase;
+}
+.nav-link {
+  color: var(--secondary)!important;
+  font-size: var(--p-18);
+  margin-right: .5rem;
+  padding-top: 0;
+}
+
+/* Hero section */
+.hero {
+  background: url('../img/hero-bg-md-light-.png') no-repeat center;
+  background-size: cover;
+  height: 60rem;
+}
+.hero h5 {
+  color: var(--primary);
+}
+.hero .row div > * {
+  margin-bottom: 3rem;
+}
+
+/* Development */
+.development .row {
+  text-align: right;
+}
+.development .row div:nth-of-type(3) {
+  text-align: left;
+}
+.development .row > div:first-child {
+  margin-bottom: 4rem;
+}
+
+/* How it works */
+.process {
+  margin: 6rem 0;
+}
+.process .container {
+  background-color: #fff;
+    padding: 4rem;
+    border: 1px dotted var(--primary);
+}
+.process h3 {
+  margin-bottom: 0;
+  color: var(--secondary);
+}
+.item:nth-child(odd){
+  margin-right: 10%;
+}
+.process .row div > p {
+  font-size: var(--p-20);
+}
+
+/* Reviews section */
+.review .card img{
+  width: min-content;
+}
+.card {
+  padding: 2rem;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+}
+.review .card {
+  padding: 2rem 1.2rem 1rem;
+  box-shadow: 0px 0px 5px #00000029;
+  height: fit-content;
+}
+
+/* FAQ */
+.panel-title {
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  padding: 2.75rem 1.4rem
+}
+.faq h4 {
+  margin-bottom: .2rem; 
+  width: 100%; 
+}
+.faq a, .faq p, .faq h5 {
+  margin-bottom: 0;
+}
+.faq .panel a, .faq div , .faq h4 a > div {
+  cursor: pointer;
+}
+.panel-body {
+  color: rgba(44,46,48,0.9);
+  font-size: 1rem;
+  padding: 1.3rem 2rem 4rem;
+  min-height: 10rem;
+  margin: auto;
+  background-color: #ffffff;
+  /* transition: border-top 0.1s ease; */
+}
+
+.panel-default {
+  margin-bottom: 2rem;
+}
+.faq a{
+  color: rgba(44,46,48,0.9);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 25px;
+}
+.faq-shadow {
+  box-shadow: 0px 0px 5px #00000029;
+}
+
+.faq a:visited , .faq a:focus, .faq a:hover {
+  text-decoration: none;
+  cursor: default;
+}
+.panel-title:hover {
+  box-shadow: 0 3px 10px 0 #B0AAAA
+}
+.panel-title:active {
+  box-shadow: none;
+}
+.no-hover {
+  box-shadow: none!important;
+}
+.faq i {
+  color: var(--primary-blue);
+  font-size: 1.2rem;
+}
+.rotate-90 {
+  transform: rotate(90deg);
+}
+.collapsing {
+  -webkit-transition: 0.5s ease ;
+  -o-transition: 0.5s ease ;
+  transition: 0.5s ease;
+}
+
+/* About  */
+.about p {
+  line-height: 1.875rem;
+}
+
+/* Subscribe */
+.subscribe .card {
+  border: none;
+  margin-right: 2rem;
+}
+.option {
+  color: var(--secondary);
+  line-height: 1.375rem;
+}
+.option li {
+  padding-bottom: 1rem;
+}
+.excluded {
+  color: #AAAAAA;
+  text-decoration: line-through;
+}
+.price {
+  margin-bottom: 2.3rem;
+}
+.price span {
+  font-weight: 700;
+  font-size: 2.75rem;
+  padding-right: .8rem;
+}
+.subscribe .grey-bg:after {
+  display: none;
+}
+.subscribe-bg {
+  padding-bottom: 13rem;
+  margin-bottom: 0!important;
+}
+.m-bg-subs {
+  margin-bottom: 0;
+  margin-top: 14rem;
+}
+
+/* Footer */
+footer {
+  background-color: var(--secondary);
+  color: #fff;
+  padding: 1.8rem 0;
+}
+.f-logos > * {
+  padding-right: 1.7rem;
+  margin-bottom: 0;
+}
+
+/* Media queries */
+@media (min-width: 576px) {  }
+
+@media (min-width: 768px) {
+  html {
+    font-size: 85%;
+  }
+  .col-md-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 29%;
+    max-width: 29%;
+  }
+  .border-rd {
+    border-right: 2px dotted var(--primary);
+  }
+  .border-ld {
+    border-left: 2px dotted var(--primary);
+  } 
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 100%;
+    }
+    nav .container * {
+      padding-bottom: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+  .about img {
+    height: 100%;
+    width: 100%;
+  }
+  }
